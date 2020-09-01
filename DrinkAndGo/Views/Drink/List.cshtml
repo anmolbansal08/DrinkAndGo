@@ -1,0 +1,27 @@
+﻿
+<div>
+    <h2>All drinks are shown here</h2>
+</div>
+<h2>@Model.CurrentCategory</h2>
+
+@{ 
+    foreach(var drink in Model.Drinks)
+    {<div class="col-sm-4 col-lg-4 col-md-4">
+    <div class="thumbnail">
+        <img src="~/Images/" alr="Hiiiiiiiiiiiiii" />
+        <div class="caption">
+            <h3 class="pull-right">@drink.Price.ToString(".")</h3>
+            <h3>
+                <a>@drink.Name</a>
+            </h3>
+            <p>@drink.ShortDescription</p>
+
+        </div>
+        </div>
+        </div>
+
+
+
+        
+    }
+}
